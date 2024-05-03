@@ -1,0 +1,28 @@
+Descripción del proyecto:
+Desarrolla una aplicación React para mostrar una lista de tareas. La aplicación debe permitir al 
+usuario agregar nuevas tareas, marcar tareas como completadas y eliminar tareas. No es necesario 
+implementar persistencia de datos, puedes manejar los datos en estado local.
+
+Requisitos:
+Pantalla de inicio: La pantalla de inicio debe mostrar un título que diga "Lista de Tareas" y 
+un formulario para agregar nuevas tareas.
+Lista de tareas: Debe haber una lista de tareas visible en la pantalla que muestre todas las tareas agregadas. 
+Cada tarea debe mostrar su nombre y un botón de "completado" para marcar la tarea como completada.
+Agregar tareas: El usuario debe poder ingresar el nombre de una nueva tarea en el formulario y 
+agregarla a la lista cuando presione el botón "Agregar".
+Marcar tareas como completadas: Cuando el usuario presione el botón "completado" junto a una tarea, 
+la tarea debe marcarse como completada y debe cambiar su apariencia para indicar que está completada.
+Eliminar tareas: El usuario debe poder eliminar una tarea de la lista cuando presione un botón de "eliminar" 
+junto a la tarea.
+Consideraciones adicionales:
+
+Utiliza componentes de función y hooks en lugar de componentes de clase.
+Puedes diseñar la interfaz de usuario según tu preferencia, pero debe ser clara y 
+fácil de entender para el usuario.
+Puedes utilizar estilos CSS simples o un framework como Bootstrap para estilizar la aplicación, 
+pero no es necesario que te centres demasiado en el diseño.
+La aplicación debe ser responsive y funcionar correctamente en dispositivos móviles.
+Entrega:
+Completa la aplicación y envía el código fuente junto con cualquier instrucción o documentación necesaria para 
+ejecutar la aplicación.
+Puedes compartir tu solución a través de un repositorio en GitHub o cualquier otra plataforma de tu elección.
