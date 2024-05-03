@@ -1,7 +1,7 @@
 import {useState } from "react";
 import TareaList from "./tareaList";
 
-export interface Task{
+interface Task{
     id: number;
     name: string;
 }

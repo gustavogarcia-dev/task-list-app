@@ -1,10 +1,18 @@
 import { useEffect,useState } from "react";
+type Task = {
+    id: number;
+    name: string;
+};
 
-export default function TareaList({tasks, updateTask}){
-        const [completedTasks, setCompletedTasks] = useState([]);
+interface Props {
+    tasks: Task[];
+    updateTask: (taskId: number) => void;
+}
+export default function TareaList({tasks, updateTask}:Props){
+        const [completedTasks, setCompletedTasks] = useState<number[]>([]);
     
         useEffect(() => {
-            const storedCompletedTasks = JSON.parse(localStorage.getItem('completedTasks'));
+            const storedCompletedTasks = JSON.parse(localStorage.getItem('completedTasks') || '[]');
             if (storedCompletedTasks) {
                 setCompletedTasks(storedCompletedTasks);
             }
@@ -13,10 +21,10 @@ export default function TareaList({tasks, updateTask}){
         useEffect(() => {
             localStorage.setItem('completedTasks', JSON.stringify(completedTasks));
         }, [completedTasks]);
-    
         
-        const handleCheckboxChange = (taskId:number) => {
-            if (completedTasks.includes(taskId)) {
+        
+        const handleCheckboxChange = (taskId: number) => {
+            if (completedTasks.includes(taskId)){
                 setCompletedTasks(completedTasks.filter(id => id !== taskId));
             } else {
                 setCompletedTasks([...completedTasks, taskId]);
