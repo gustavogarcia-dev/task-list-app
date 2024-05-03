@@ -44,7 +44,7 @@ export default function TareaList({tasks, updateTask}){
                                     <button
                                         type="submit"
                                         onClick={() => updateTask(task.id)}
-                                        className="btn btn-danger mx-4"
+                                        className="btn btn-danger mx-2"
                                     >
                                         X
                                     </button>
